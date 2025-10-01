@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products | Perfect Springs</title>
+    <meta name="description"
+        content="Explore the wide range of Perfect Springs products, including natural fruit juices, energy drinks, and flavoured beverages." />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Tiny Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header & Navigation (Active class on 'Products') -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Perfect Springs - Logo.jpg" alt="Perfect Springs Logo" width="45" height="45"
+                        class="d-inline-block align-text-top me-2" />
+                    Perfect Springs
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a class="btn btn-outline-primary" href="distributor.html">Become a Distributor</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero Section -->
+        <section class="page-hero-about text-white text-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container position-relative">
+                <h1 class="display-3" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">Make Your Choice</h1>
+                <p class="lead fs-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    Discover the different flavours of Perfect Springs
+                </p>
+                <img src="images/Yardie.png" alt="Can of Yardie drink" class="hero-product-img" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000" />
+            </div>
+        </section>
+
+        <!-- Product Filters -->
+        <section class="py-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="product-filters d-flex justify-content-center flex-wrap gap-2 mb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="go-drinks">Go Drinks</button>
+                    <button class="filter-btn" data-filter="energy">Energy</button>
+                    <button class="filter-btn" data-filter="spring-water">Spring Water</button>
+                    <button class="filter-btn" data-filter="fruits">Fruits</button>
+                    <button class="filter-btn" data-filter="flavoured">Flavoured</button>
+                </div>
+
+                <!-- Product Showcase Area -->
+                <div class="product-list">
+                    <!-- Cast Natural Fruit Juice -->
+                    <div class="product-showcase-section" data-category="fruits" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/PS Cast Natura Guava Juice.png" width="200" alt="Guava Juice"
+                                            id="fruit-juice-img">
+                                    </div>
+                                    <div class="image-caption" id="fruit-juice-caption">
+                                        <h5>Guava</h5>
+                                        <p>Rich in vitamin C and dietary fiber, supporting immune health and digestion
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="fruit-juice-gallery">
+                                        <div class="thumb-item"
+                                            data-main-image="images/PS Cast Natural Strawberry Juice.png"
+                                            data-title="Strawberry" data-desc="Vitamin C rich, supports immunity"><img
+                                                src="images/PS Cast Natural Strawberry Juice.png"
+                                                alt="Strawberry thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Cast Natural Peach Juice.png"
+                                            data-title="Peach" data-desc="Potassium rich, supports vision"><img
+                                                src="images/PS Cast Natural Peach Juice.png" alt="Peach thumb"></div>
+                                        <div class="thumb-item active"
+                                            data-main-image="images/PS Cast Natura Guava Juice.png" data-title="Guava"
+                                            data-desc="Vitamin C rich, aids digestion"><img
+                                                src="images/PS Cast Natura Guava Juice.png" alt="Guava thumb">
+                                        </div>
+                                        <div class="thumb-item"
+                                            data-main-image="images/PS Cast Natural Orange Juice.png"
+                                            data-title="Orange" data-desc="Vitamin C rich, boosts immunity"><img
+                                                src="images/PS Cast Natural Orange Juice.png" alt="Orange thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Cast Natural Apple Juice.png"
+                                            data-title="Apple" data-desc="Fiber rich, supports digestion"><img
+                                                src="images/PS Cast Natural Apple Juice.png" alt="Apple thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Cast Natural Grape Juice.png"
+                                            data-title="Grape" data-desc="Antioxidant rich, heart healthy"><img
+                                                src="images/PS Cast Natural Grape Juice.png" alt="Grape thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Cast Natural Mango juice.png"
+                                            data-title="Mango" data-desc="Vitamin A rich, immune support"><img
+                                                src="images/PS Cast Natural Mango juice.png" alt="Mango thumb"></div>
+                                        <div class="thumb-item"
+                                            data-main-image="images/PS Cast Natural Pineapple Juice.png"
+                                            data-title="Pineapple" data-desc="Bromelain rich, aids digestion"><img
+                                                src="images/PS Cast Natural Pineapple Juice.png" alt="Pineapple thumb">
+                                        </div>
+                                        <div class="thumb-item"
+                                            data-main-image="images/PS Cast Natural Passion Fruit Juice.png"
+                                            data-title="Passion Fruit" data-desc="Vitamin C rich, antioxidant boost">
+                                            <img src="images/PS Cast Natural Passion Fruit Juice.png"
+                                                alt="Passion Fruit thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Cast Natural Fruit Juice</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <ul>
+                                        <li>100% pure fruit juice with no added sugars or preservatives, delivering
+                                            authentic taste and
+                                            natural nutrition.</li>
+                                        <li>Rich source of essential vitamins, minerals, and antioxidants for optimal
+                                            daily nutrition.</li>
+                                        <li>Available in over 35 delicious fruit varieties, supporting immune health and
+                                            overall wellness.
+                                        </li>
+                                        <li>Carefully crafted to maintain maximum nutritional value while providing
+                                            refreshing taste.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DNA Go Drinks -->
+                    <div class="product-showcase-section" data-category="go-drinks energy" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/DNA Go Fusion.png" alt="DNA GO Fusion" id="dnago-img">
+                                    </div>
+                                    <div class="image-caption" id="dnago-caption">
+                                        <h5>Fusion</h5>
+                                        <p>Premium energy drink with natural caffeine and B-vitamins for sustained
+                                            energy</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="dnago-gallery">
+                                        <div class="thumb-item" data-main-image="images/DNA Go Original.png"
+                                            data-title="Original" data-desc="Natural caffeine + B-vitamins"><img
+                                                src="images/DNA Go Original.png" alt="Original thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/DNA Go Yardie.png"
+                                            data-title="Yardie" data-desc="Tropical energy with herbs"><img
+                                                src="images/DNA Go Yardie.png" alt="Yardie thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/DNA Go Vanilla Blast.png"
+                                            data-title="Vanilla Blast" data-desc="Vanilla energy with amino acids"><img
+                                                src="images/DNA Go Vanilla Blast.png" alt="Vanilla thumb"></div>
+                                        <div class="thumb-item active" data-main-image="images/DNA Go Fusion.png"
+                                            data-title="Fusion" data-desc="Premium energy with B-vitamins"><img
+                                                src="images/DNA Go Fusion.png" alt="Fusion thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">DNA Go Drinks</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Experience sustained energy and enhanced performance with DNA Go's premium energy
+                                        drink collection.
+                                        Each formula contains natural caffeine, B-vitamins, and amino acids to support
+                                        physical endurance
+                                        and mental focus. Perfect for active lifestyles, workouts, or long work
+                                        sessions, our energy drinks
+                                        provide the boost you need without the crash.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Springles Flavoured Drinks -->
+                    <div class="product-showcase-section" data-category="flavoured" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/Springles Cola.png" alt="Springles Cola" id="springles-img">
+                                    </div>
+                                    <div class="image-caption" id="springles-caption">
+                                        <h5>Cola</h5>
+                                        <p>Classic cola flavor with natural sweetness and refreshing carbonation</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="springles-gallery">
+                                        <div class="thumb-item active" data-main-image="images/Springles Cola.png"
+                                            data-title="Cola" data-desc="Classic cola, naturally sweet"><img
+                                                src="images/Springles Cola.png" alt="Cola thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/Springles Lemon.png"
+                                            data-title="Lime" data-desc="Bright citrus, invigorating"><img
+                                                src="images/Springles Lemon.png" alt="Lime thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/Springles Orange.png"
+                                            data-title="Orange Crush" data-desc="Bold orange, refreshing"><img
+                                                src="images/Springles Orange.png" alt="Orange Crush thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/Springles Tropical.png"
+                                            data-title="Original" data-desc="Exotic tropical blend"><img
+                                                src="images/Springles Tropical.png" alt="Original thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Springles Flavoured Drinks</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Discover the refreshing world of Springles flavored drinks, crafted with natural
+                                        flavor extracts
+                                        and premium carbonation. Each sip delivers authentic taste experiences, from
+                                        classic cola to exotic
+                                        tropical blends. Perfect for social gatherings, family celebrations, or everyday
+                                        refreshment, our
+                                        flavored drinks bring joy and delicious moments to every occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Perfect Springs Bottled Water -->
+                    <div class="product-showcase-section" data-category="spring-water" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/PS Bottled Water.jpg" alt="Perfect Springs Bottled Water"
+                                            id="water-img">
+                                    </div>
+                                    <div class="image-caption" id="water-caption">
+                                        <h5>Pure Spring Water</h5>
+                                        <p>Naturally filtered mineral water from pristine mountain springs</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="water-gallery">
+                                        <div class="thumb-item active" data-main-image="images/PS Bottled Water.jpg"
+                                            data-title="Pure Spring" data-desc="Natural minerals, pure refreshment"><img
+                                                src="images/PS Bottled Water.jpg" alt="Pure Spring thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Bottled Water_1.jpg"
+                                            data-title="Mineral Rich" data-desc="Electrolyte balanced hydration"><img
+                                                src="images/PS Bottled Water_1.jpg" alt="Mineral Rich thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/PS Bottled Water_2.jpg"
+                                            data-title="Alkaline Balance" data-desc="pH balanced for optimal health">
+                                            <img src="images/PS Bottled Water_2.jpg" alt="Alkaline thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Perfect Springs Bottled Water</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Experience the purity of nature with Perfect Springs Bottled Water, sourced from
+                                        pristine mountain
+                                        springs. Our water undergoes natural filtration through ancient rock formations,
+                                        preserving
+                                        essential minerals while maintaining exceptional purity. Rich in natural
+                                        electrolytes and perfectly
+                                        pH balanced, it's the ideal choice for optimal hydration and daily wellness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Springles Orange Special Edition -->
+                    <div class="product-showcase-section" data-category="flavoured" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/product-springles-orange.png"
+                                            alt="Springles Orange Special Edition" id="springles-orange-img">
+                                    </div>
+                                    <div class="image-caption" id="springles-orange-caption">
+                                        <h5>Orange Special Edition</h5>
+                                        <p>Premium orange flavor with real citrus extracts and natural sweetness</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="springles-orange-gallery">
+                                        <div class="thumb-item active"
+                                            data-main-image="images/product-springles-orange.png"
+                                            data-title="Orange Special" data-desc="Premium orange, real citrus"><img
+                                                src="images/product-springles-orange.png" alt="Orange Special thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/Springles Orange.png"
+                                            data-title="Classic Orange" data-desc="Bold orange, refreshing"><img
+                                                src="images/Springles Orange.png" alt="Classic Orange thumb"></div>
+                                        <div class="thumb-item"
+                                            data-main-image="images/Perfect Springs - Springles - Can.png"
+                                            data-title="Can Format" data-desc="Convenient can packaging"><img
+                                                src="images/Perfect Springs - Springles - Can.png"
+                                                alt="Can Format thumb"></div>
+                                        <div class="thumb-item"
+                                            data-main-image="images/Perfect Springs - Springles - Pet Bottle.png"
+                                            data-title="Bottle Format" data-desc="Larger bottle packaging"><img
+                                                src="images/Perfect Springs - Springles - Pet Bottle.png"
+                                                alt="Bottle Format thumb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Springles Orange Special Edition</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Indulge in the vibrant taste of Springles Orange Special Edition, crafted with
+                                        premium orange
+                                        extracts and natural citrus oils for an authentic, refreshing experience. This
+                                        limited-edition
+                                        offering combines the perfect balance of sweet and tangy flavors with
+                                        invigorating carbonation.
+                                        Available in both convenient can and larger bottle formats, it's the ultimate
+                                        choice for orange
+                                        flavor enthusiasts seeking quality and refreshment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Watermelon Juice -->
+                    <div class="product-showcase-section" data-category="fruits" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/product-watermelon-duo.png" alt="Premium Watermelon Juice Duo"
+                                            id="watermelon-img">
+                                    </div>
+                                    <div class="image-caption" id="watermelon-caption">
+                                        <h5>Watermelon Duo</h5>
+                                        <p>Refreshing watermelon juice with natural sweetness and hydrating properties
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="watermelon-gallery">
+                                        <div class="thumb-item active"
+                                            data-main-image="images/product-watermelon-duo.png"
+                                            data-title="Watermelon Duo" data-desc="Refreshing, naturally sweet"><img
+                                                src="images/product-watermelon-duo.png" alt="Watermelon Duo thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/product-fruit-juice.png"
+                                            data-title="Classic Watermelon" data-desc="Pure watermelon, hydrating"><img
+                                                src="images/product-fruit-juice.png" alt="Classic Watermelon thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/PS Bottled Water.jpg"
+                                            data-title="Watermelon Infused" data-desc="Watermelon flavored water"><img
+                                                src="images/PS Bottled Water.jpg" alt="Watermelon Infused thumb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Premium Watermelon Juice Collection</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Quench your thirst with our Premium Watermelon Juice Collection, featuring the
+                                        naturally sweet and
+                                        refreshing taste of ripe watermelons. Rich in lycopene and natural electrolytes,
+                                        our watermelon
+                                        products provide excellent hydration and antioxidant benefits. From pure
+                                        watermelon juice to infused
+                                        water varieties, discover the perfect balance of taste and nutrition in every
+                                        refreshing sip.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Flavored Beverage Collection -->
+                    <div class="product-showcase-section" data-category="flavoured" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/product-flavoured-beverage.png" alt="Premium Flavored Beverage"
+                                            id="premium-flavored-img">
+                                    </div>
+                                    <div class="image-caption" id="premium-flavored-caption">
+                                        <h5>Premium Collection</h5>
+                                        <p>Artisanal flavored beverages crafted with natural extracts and premium
+                                            ingredients</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="premium-flavored-gallery">
+                                        <div class="thumb-item active"
+                                            data-main-image="images/product-flavoured-beverage.png"
+                                            data-title="Premium Collection" data-desc="Artisanal, naturally flavored">
+                                            <img src="images/product-flavoured-beverage.png"
+                                                alt="Premium Collection thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/hero-cans-all.png"
+                                            data-title="Hero Collection" data-desc="Premium assortment showcase"><img
+                                                src="images/hero-cans-all.png" alt="Hero Collection thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/products-hero-can.png"
+                                            data-title="Signature Can" data-desc="Signature hero product"><img
+                                                src="images/products-hero-can.png" alt="Signature Can thumb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">Premium Flavored Beverage Collection</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Experience sophistication in every sip with our Premium Flavored Beverage
+                                        Collection. Each beverage
+                                        is meticulously crafted using natural flavor extracts, premium carbonation, and
+                                        carefully selected
+                                        ingredients. From artisanal blends to our signature hero products, discover an
+                                        elevated refreshment
+                                        experience that combines exceptional taste with quality craftsmanship. Perfect
+                                        for discerning
+                                        palates and special occasions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW Energy Drinks -->
+                    <div class="product-showcase-section" data-category="energy" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="product-image-display">
+                                    <div class="main-product-image">
+                                        <img src="images/ROW Energy Drink - Perfect Springs.jpg" alt="ROW Energy Drink"
+                                            id="energy-img">
+                                    </div>
+                                    <div class="image-caption" id="energy-caption">
+                                        <h5>Original Energy</h5>
+                                        <p>High-performance energy formula with natural caffeine and electrolytes</p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-gallery-wrapper">
+                                    <div class="thumbnail-gallery" id="energy-gallery">
+                                        <div class="thumb-item active"
+                                            data-main-image="images/ROW Energy Drink - Perfect Springs.jpg"
+                                            data-title="Original Energy" data-desc="Natural caffeine + electrolytes">
+                                            <img src="images/ROW Energy Drink - Perfect Springs.jpg"
+                                                alt="Original Energy thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/product-energy-drink.jpg"
+                                            data-title="Berry Blast" data-desc="Berry energy with antioxidants"><img
+                                                src="images/product-energy-drink.jpg" alt="Berry Blast thumb"></div>
+                                        <div class="thumb-item" data-main-image="images/product-energy-drink-02.png"
+                                            data-title="Citrus Charge" data-desc="Citrus energy with vitamin C"><img
+                                                src="images/product-energy-drink-02.png" alt="Citrus Charge thumb">
+                                        </div>
+                                        <div class="thumb-item" data-main-image="images/product-energy-drink.png"
+                                            data-title="Tropical Storm" data-desc="Tropical energy with minerals"><img
+                                                src="images/product-energy-drink.png" alt="Tropical Storm thumb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="product-details">
+                                    <h2 class="section-heading-teal">ROW Energy Drinks</h2>
+                                    <div class="video-placeholder my-3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <p>Fuel your active lifestyle with ROW Energy Drinks, formulated for peak
+                                        performance and sustained
+                                        energy. Our advanced energy formulas combine natural caffeine from green tea
+                                        extract, essential
+                                        B-vitamins, and key electrolytes to support endurance, focus, and rapid
+                                        recovery. Whether you're
+                                        hitting the gym, conquering your workday, or pushing your limits, ROW delivers
+                                        clean, effective
+                                        energy without compromise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Distributor CTA Section (Reused) -->
+    <section class="py-5 mb-5 text-white cta-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container d-flex justify-content-between">
+            <div class="cta-text" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                <p class="my-4">
+                    Join our growing network of distributors and enjoy exclusive
+                    business opportunities, profitable returns and access to a trusted
+                    brand.
+                </p>
+                <a href="distributor.html" class="btn btn-primary btn-lg">Become a Distributor</a>
+            </div>
+            <h2 data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">Partner With Us</h2>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer (Reused) -->
+    <footer class="footer-section py-5 site-footer">
+        <div class="container">
+            <div class="d-flex justify-content-end mb-4 footer-btn" data-aos="fade-up" data-aos-duration="1000">
+                <a href="blog.html" class="btn btn-light mt-4 d-block" style="text-align: right">Follow Our Blog for
+                    Latest News →</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                    <a class="navbar-brand text-white fs-4 bg-white rounded p-2 d-inline-block" href="#">
+                        <img src="images/logo.png" alt="Perfect Springs Logo" width="40" height="40"
+                            class="d-inline-block align-text-top me-2" />
+                        Perfect Springs
+                    </a>
+                </div>
+
+                <div class="col-lg-8 footer-links" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="text-white">Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="text-white">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="text-white">Social Media</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2)" />
+            <p class="text-center text-white-50 mb-0">
+                ©2025 Copyright Perfect Springs
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Tiny Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
